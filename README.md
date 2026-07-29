@@ -18,9 +18,7 @@
 
 I turn ambitious ideas into fast, reliable, and thoughtfully designed products. My work brings together product strategy, interface design, full-stack engineering, automation, and deployment—so every project moves from concept to a real, usable experience.
 
-```text
-PRODUCT THINKING  →  EXPERIENCE DESIGN  →  FULL-STACK ENGINEERING  →  SHIP & IMPROVE
-```
+![Animated product delivery pipeline](./assets/product-pipeline.svg)
 
 - **Product engineering** — business goals translated into maintainable software
 - **Experience quality** — responsive, accessible, and visually consistent interfaces
@@ -96,6 +94,10 @@ PRODUCT THINKING  →  EXPERIENCE DESIGN  →  FULL-STACK ENGINEERING  →  SHIP
 
 </div>
 
+### Architecture in motion
+
+![Animated full-stack engineering ecosystem](./assets/engineering-ecosystem.svg)
+
 ## Engineering signal
 
 <div align="center">
@@ -122,6 +124,8 @@ PRODUCT THINKING  →  EXPERIENCE DESIGN  →  FULL-STACK ENGINEERING  →  SHIP
 <sub>Generated automatically from my GitHub contribution graph.</sub>
 
 </div>
+
+![Animated brand divider](./assets/motion-divider.svg)
 
 ## Let’s build something valuable
 

@@ -1,0 +1,139 @@
+<svg width="1200" height="590" viewBox="0 0 1200 590" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Animated full-stack engineering ecosystem</title>
+  <desc id="desc">An animated map connecting product strategy, interface engineering, backend systems, data, cloud, and automation.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="590" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#050A12"/>
+      <stop offset=".5" stop-color="#0A1220"/>
+      <stop offset="1" stop-color="#100E27"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="180" y1="70" x2="1020" y2="520" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#22D3EE"/>
+      <stop offset=".47" stop-color="#60A5FA"/>
+      <stop offset="1" stop-color="#A78BFA"/>
+    </linearGradient>
+    <radialGradient id="core">
+      <stop stop-color="#172554"/>
+      <stop offset=".6" stop-color="#0F172A"/>
+      <stop offset="1" stop-color="#09111F"/>
+    </radialGradient>
+    <radialGradient id="halo">
+      <stop stop-color="#22D3EE" stop-opacity=".22"/>
+      <stop offset="1" stop-color="#22D3EE" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <circle cx="1.2" cy="1.2" r="1.2" fill="#94A3B8" fill-opacity=".09"/>
+    </pattern>
+    <filter id="blur"><feGaussianBlur stdDeviation="20"/></filter>
+    <filter id="glow" x="-200%" y="-200%" width="500%" height="500%">
+      <feGaussianBlur stdDeviation="5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <style>
+      .orbit { stroke-dasharray: 8 18; animation: spin-dash 18s linear infinite; }
+      .orbit.reverse { animation-direction: reverse; animation-duration: 24s; }
+      .node { animation: float 5s ease-in-out infinite; }
+      .n2{animation-delay:-.8s}.n3{animation-delay:-1.6s}.n4{animation-delay:-2.4s}.n5{animation-delay:-3.2s}.n6{animation-delay:-4s}
+      .core-ring { animation: core-pulse 3.2s ease-in-out infinite; transform-origin:600px 297px; }
+      .scan { animation: scan 4s ease-in-out infinite; }
+      .status { animation: blink 1.8s ease-in-out infinite; }
+      @keyframes spin-dash { to { stroke-dashoffset:-520; } }
+      @keyframes float { 50% { opacity:.8; } }
+      @keyframes core-pulse { 50% { opacity:.36; transform:scale(1.07); } }
+      @keyframes scan { 0%,100% { opacity:.15; transform:translateX(-25px); } 50% { opacity:.75; transform:translateX(25px); } }
+      @keyframes blink { 50% { opacity:.35; } }
+      @media (prefers-reduced-motion: reduce) {
+        .orbit,.node,.core-ring,.scan,.status{animation:none!important}
+        .packet{display:none}
+      }
+    </style>
+  </defs>
+
+  <rect width="1200" height="590" rx="28" fill="url(#bg)"/>
+  <rect width="1200" height="590" rx="28" fill="url(#grid)"/>
+  <circle cx="600" cy="297" r="270" fill="url(#halo)" filter="url(#blur)"/>
+
+  <text x="42" y="48" fill="#E2E8F0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" letter-spacing="2.5">FULL-STACK PRODUCT ARCHITECTURE</text>
+  <g transform="translate(1010 28)">
+    <circle class="status" cx="8" cy="8" r="5" fill="#22D3EE"/>
+    <text x="23" y="12" fill="#67E8F9" font-family="JetBrains Mono, monospace" font-size="11" letter-spacing="1.2">SYSTEM ONLINE</text>
+  </g>
+
+  <ellipse class="orbit" cx="600" cy="297" rx="365" ry="205" stroke="url(#accent)" stroke-opacity=".35" stroke-width="2"/>
+  <ellipse class="orbit reverse" cx="600" cy="297" rx="248" ry="138" stroke="#E2E8F0" stroke-opacity=".14" stroke-width="1.5"/>
+  <path d="M238 297H962M600 91V503" stroke="#94A3B8" stroke-opacity=".07"/>
+
+  <g class="core-ring">
+    <circle cx="600" cy="297" r="122" fill="none" stroke="url(#accent)" stroke-opacity=".38" stroke-width="2"/>
+    <circle cx="600" cy="297" r="110" fill="url(#core)" stroke="url(#accent)" stroke-width="2"/>
+  </g>
+  <circle cx="600" cy="297" r="91" fill="#0B1424" stroke="#334155"/>
+  <path d="M556 267L528 297L556 327M644 267L672 297L644 327M622 247L578 347" stroke="url(#accent)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="600" y="386" text-anchor="middle" fill="#F8FAFC" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14" font-weight="750" letter-spacing="2">PRODUCT CORE</text>
+  <rect class="scan" x="573" y="227" width="54" height="3" rx="1.5" fill="url(#accent)"/>
+
+  <g class="node n1" transform="translate(94 232)">
+    <rect width="202" height="126" rx="20" fill="#0D1726" stroke="#22D3EE" stroke-opacity=".58"/>
+    <circle cx="34" cy="34" r="16" fill="#22D3EE" fill-opacity=".13" stroke="#22D3EE"/>
+    <path d="M27 34H41M34 27V41" stroke="#A5F3FC" stroke-width="2"/>
+    <text x="60" y="39" fill="#F8FAFC" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" font-weight="750">PRODUCT</text>
+    <text x="24" y="76" fill="#94A3B8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12">Strategy · UX · Systems</text>
+    <text x="24" y="99" fill="#22D3EE" font-family="JetBrains Mono, monospace" font-size="10" letter-spacing="1.2">WHY → WHAT</text>
+  </g>
+
+  <g class="node n2" transform="translate(255 70)">
+    <rect width="202" height="126" rx="20" fill="#0D1726" stroke="#38BDF8" stroke-opacity=".52"/>
+    <circle cx="34" cy="34" r="16" fill="#38BDF8" fill-opacity=".13" stroke="#38BDF8"/>
+    <text x="34" y="39" text-anchor="middle" fill="#BAE6FD" font-family="JetBrains Mono, monospace" font-size="13" font-weight="700">UI</text>
+    <text x="60" y="39" fill="#F8FAFC" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" font-weight="750">INTERFACE</text>
+    <text x="24" y="76" fill="#94A3B8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12">Next.js · React · TS</text>
+    <text x="24" y="99" fill="#38BDF8" font-family="JetBrains Mono, monospace" font-size="10" letter-spacing="1.2">PIXEL → PRODUCT</text>
+  </g>
+
+  <g class="node n3" transform="translate(743 70)">
+    <rect width="202" height="126" rx="20" fill="#0D1726" stroke="#60A5FA" stroke-opacity=".52"/>
+    <circle cx="34" cy="34" r="16" fill="#60A5FA" fill-opacity=".13" stroke="#60A5FA"/>
+    <path d="M27 29H41M27 34H41M27 39H41" stroke="#BFDBFE" stroke-width="2" stroke-linecap="round"/>
+    <text x="60" y="39" fill="#F8FAFC" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" font-weight="750">BACKEND</text>
+    <text x="24" y="76" fill="#94A3B8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12">Node · APIs · Auth</text>
+    <text x="24" y="99" fill="#60A5FA" font-family="JetBrains Mono, monospace" font-size="10" letter-spacing="1.2">LOGIC → SCALE</text>
+  </g>
+
+  <g class="node n4" transform="translate(904 232)">
+    <rect width="202" height="126" rx="20" fill="#0D1726" stroke="#818CF8" stroke-opacity=".52"/>
+    <circle cx="34" cy="34" r="16" fill="#818CF8" fill-opacity=".13" stroke="#818CF8"/>
+    <ellipse cx="34" cy="29" rx="8" ry="4" stroke="#C7D2FE" stroke-width="2"/>
+    <path d="M26 29V39C26 41 30 43 34 43C38 43 42 41 42 39V29" stroke="#C7D2FE" stroke-width="2"/>
+    <text x="60" y="39" fill="#F8FAFC" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" font-weight="750">DATA</text>
+    <text x="24" y="76" fill="#94A3B8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12">Postgres · Prisma · CRM</text>
+    <text x="24" y="99" fill="#818CF8" font-family="JetBrains Mono, monospace" font-size="10" letter-spacing="1.2">SIGNAL → INSIGHT</text>
+  </g>
+
+  <g class="node n5" transform="translate(743 394)">
+    <rect width="202" height="126" rx="20" fill="#0D1726" stroke="#A78BFA" stroke-opacity=".52"/>
+    <circle cx="34" cy="34" r="16" fill="#A78BFA" fill-opacity=".13" stroke="#A78BFA"/>
+    <path d="M25 37C25 31 29 27 34 27C38 27 41 29 42 33C46 33 48 36 48 39C48 42 45 44 42 44H27C24 44 22 42 22 39C22 38 23 37 25 37Z" stroke="#DDD6FE" stroke-width="1.8"/>
+    <text x="60" y="39" fill="#F8FAFC" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" font-weight="750">CLOUD</text>
+    <text x="24" y="76" fill="#94A3B8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12">Vercel · Cloudflare · CI</text>
+    <text x="24" y="99" fill="#A78BFA" font-family="JetBrains Mono, monospace" font-size="10" letter-spacing="1.2">COMMIT → LIVE</text>
+  </g>
+
+  <g class="node n6" transform="translate(255 394)">
+    <rect width="202" height="126" rx="20" fill="#0D1726" stroke="#C084FC" stroke-opacity=".52"/>
+    <circle cx="34" cy="34" r="16" fill="#C084FC" fill-opacity=".13" stroke="#C084FC"/>
+    <path d="M34 24L37 31L44 34L37 37L34 44L31 37L24 34L31 31L34 24Z" stroke="#E9D5FF" stroke-width="1.8" stroke-linejoin="round"/>
+    <text x="60" y="39" fill="#F8FAFC" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="15" font-weight="750">AUTOMATION</text>
+    <text x="24" y="76" fill="#94A3B8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12">AI · Workflows · Growth</text>
+    <text x="24" y="99" fill="#C084FC" font-family="JetBrains Mono, monospace" font-size="10" letter-spacing="1.2">REPEAT → MULTIPLY</text>
+  </g>
+
+  <g class="packet" filter="url(#glow)">
+    <circle r="5" fill="#22D3EE"><animateMotion dur="7s" repeatCount="indefinite" path="M296 295C380 180 480 178 510 245"/></circle>
+    <circle r="4" fill="#60A5FA"><animateMotion dur="7s" begin="-1.4s" repeatCount="indefinite" path="M690 245C735 175 810 165 844 196"/></circle>
+    <circle r="5" fill="#818CF8"><animateMotion dur="7s" begin="-2.8s" repeatCount="indefinite" path="M718 297C790 290 850 290 904 295"/></circle>
+    <circle r="4" fill="#A78BFA"><animateMotion dur="7s" begin="-4.2s" repeatCount="indefinite" path="M690 350C735 415 790 430 844 394"/></circle>
+    <circle r="5" fill="#C084FC"><animateMotion dur="7s" begin="-5.6s" repeatCount="indefinite" path="M510 350C455 415 400 430 356 394"/></circle>
+  </g>
+
+  <rect x=".75" y=".75" width="1198.5" height="588.5" rx="27.25" stroke="url(#accent)" stroke-opacity=".34" stroke-width="1.5"/>
+</svg>

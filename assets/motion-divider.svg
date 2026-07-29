@@ -1,0 +1,29 @@
+<svg width="1200" height="74" viewBox="0 0 1200 74" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Animated cyan and violet section divider">
+  <defs>
+    <linearGradient id="line" x1="0" y1="0" x2="1200" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#22D3EE" stop-opacity="0"/>
+      <stop offset=".22" stop-color="#22D3EE"/>
+      <stop offset=".5" stop-color="#60A5FA"/>
+      <stop offset=".78" stop-color="#A78BFA"/>
+      <stop offset="1" stop-color="#A78BFA" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-300%" width="140%" height="700%">
+      <feGaussianBlur stdDeviation="5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <style>
+      .dash{stroke-dasharray:10 18;animation:move 8s linear infinite}
+      .pulse{animation:pulse 2.6s ease-in-out infinite;transform-origin:center}
+      @keyframes move{to{stroke-dashoffset:-224}}
+      @keyframes pulse{50%{opacity:.35;transform:scale(.65)}}
+      @media(prefers-reduced-motion:reduce){.dash,.pulse{animation:none!important}.traveler{display:none}}
+    </style>
+  </defs>
+  <path class="dash" d="M80 37H1120" stroke="url(#line)" stroke-width="2" filter="url(#glow)"/>
+  <circle class="pulse" cx="600" cy="37" r="7" fill="#60A5FA" filter="url(#glow)"/>
+  <g class="traveler">
+    <circle r="4" fill="#F8FAFC" filter="url(#glow)">
+      <animateMotion dur="5s" repeatCount="indefinite" path="M80 37H1120"/>
+    </circle>
+  </g>
+</svg>
