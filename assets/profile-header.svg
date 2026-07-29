@@ -1,0 +1,91 @@
+<svg width="1200" height="390" viewBox="0 0 1200 390" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Efe Eren Akar — Full-Stack Developer</title>
+  <desc id="desc">Animated dark developer profile banner with cyan and violet accents.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="390" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#050A12"/>
+      <stop offset="0.52" stop-color="#0B1220"/>
+      <stop offset="1" stop-color="#101027"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="220" y1="0" x2="980" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#22D3EE"/>
+      <stop offset="0.5" stop-color="#60A5FA"/>
+      <stop offset="1" stop-color="#A78BFA"/>
+    </linearGradient>
+    <radialGradient id="cyanGlow">
+      <stop stop-color="#22D3EE" stop-opacity=".32"/>
+      <stop offset="1" stop-color="#22D3EE" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="violetGlow">
+      <stop stop-color="#8B5CF6" stop-opacity=".28"/>
+      <stop offset="1" stop-color="#8B5CF6" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r="1" fill="#94A3B8" fill-opacity=".12"/>
+    </pattern>
+    <filter id="blur">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+    <filter id="textGlow" x="-20%" y="-40%" width="140%" height="180%">
+      <feGaussianBlur stdDeviation="7" result="blur"/>
+      <feFlood flood-color="#22D3EE" flood-opacity=".24" result="color"/>
+      <feComposite in="color" in2="blur" operator="in" result="shadow"/>
+      <feMerge>
+        <feMergeNode in="shadow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <clipPath id="frame">
+      <rect width="1200" height="390" rx="28"/>
+    </clipPath>
+    <style>
+      .orb-a { animation: drift-a 8s ease-in-out infinite alternate; }
+      .orb-b { animation: drift-b 10s ease-in-out infinite alternate; }
+      .dash { stroke-dasharray: 8 14; animation: travel 12s linear infinite; }
+      .pulse { animation: pulse 2.8s ease-in-out infinite; transform-origin: center; }
+      .caret { animation: blink 1s steps(1) infinite; }
+      @keyframes drift-a { to { transform: translate(70px, 18px) scale(1.08); } }
+      @keyframes drift-b { to { transform: translate(-55px, -24px) scale(.94); } }
+      @keyframes travel { to { stroke-dashoffset: -220; } }
+      @keyframes pulse { 50% { opacity: .45; transform: scale(.82); } }
+      @keyframes blink { 50% { opacity: 0; } }
+      @media (prefers-reduced-motion: reduce) {
+        .orb-a, .orb-b, .dash, .pulse, .caret { animation: none; }
+      }
+    </style>
+  </defs>
+
+  <g clip-path="url(#frame)">
+    <rect width="1200" height="390" fill="url(#bg)"/>
+    <rect width="1200" height="390" fill="url(#grid)"/>
+
+    <circle class="orb-a" cx="95" cy="80" r="220" fill="url(#cyanGlow)" filter="url(#blur)"/>
+    <circle class="orb-b" cx="1100" cy="320" r="260" fill="url(#violetGlow)" filter="url(#blur)"/>
+
+    <path class="dash" d="M-10 320C190 215 302 350 505 258C715 163 840 241 1215 66" stroke="url(#accent)" stroke-opacity=".32" stroke-width="1.5"/>
+    <path d="M0 350C220 268 352 380 565 294C778 208 925 285 1200 174" stroke="#E2E8F0" stroke-opacity=".06"/>
+
+    <g transform="translate(72 68)">
+      <rect width="230" height="34" rx="17" fill="#111C2D" stroke="#22D3EE" stroke-opacity=".42"/>
+      <circle class="pulse" cx="20" cy="17" r="5" fill="#22D3EE"/>
+      <text x="35" y="22" fill="#A5F3FC" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" font-weight="700" letter-spacing="2">AVAILABLE TO BUILD</text>
+    </g>
+
+    <g transform="translate(72 150)" filter="url(#textGlow)">
+      <text fill="#F8FAFC" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="68" font-weight="800" letter-spacing="-2">EFE EREN AKAR</text>
+      <rect class="caret" x="522" y="-54" width="5" height="66" rx="2.5" fill="#22D3EE"/>
+    </g>
+
+    <text x="74" y="242" fill="url(#accent)" font-family="JetBrains Mono, SFMono-Regular, Consolas, monospace" font-size="27" font-weight="700" letter-spacing="2">FULL-STACK PRODUCT DEVELOPER</text>
+    <text x="74" y="286" fill="#94A3B8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="500">Product thinking · Refined interfaces · Reliable systems · Practical automation</text>
+
+    <g transform="translate(942 72)" opacity=".78">
+      <rect width="184" height="184" rx="28" fill="#0B1424" stroke="url(#accent)" stroke-opacity=".5"/>
+      <path d="M68 52L34 92L68 132" stroke="#22D3EE" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M116 52L150 92L116 132" stroke="#A78BFA" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M105 38L79 146" stroke="#F8FAFC" stroke-opacity=".8" stroke-width="6" stroke-linecap="round"/>
+    </g>
+
+    <rect x=".75" y=".75" width="1198.5" height="388.5" rx="27.25" stroke="url(#accent)" stroke-opacity=".34" stroke-width="1.5"/>
+  </g>
+</svg>

@@ -1,0 +1,39 @@
+name: Generate contribution snake
+
+on:
+  schedule:
+    - cron: "17 0 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Check out profile repository
+        uses: actions/checkout@v4
+
+      - name: Generate animated contribution graphs
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            assets/contribution-snake.svg?palette=github-light&color_snake=#7C3AED&color_dots=#E2E8F0,#A5F3FC,#67E8F9,#22D3EE,#0891B2
+            assets/contribution-snake-dark.svg?palette=github-dark&color_snake=#22D3EE&color_dots=#161B22,#312E81,#6D28D9,#8B5CF6,#C4B5FD
+
+      - name: Publish refreshed animation
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/contribution-snake.svg assets/contribution-snake-dark.svg
+          if git diff --cached --quiet; then
+            echo "Contribution animation is already current."
+          else
+            git commit -m "chore: refresh contribution animation"
+            git push
+          fi
