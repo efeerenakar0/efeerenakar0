@@ -100,24 +100,12 @@ PRODUCT THINKING  →  EXPERIENCE DESIGN  →  FULL-STACK ENGINEERING  →  SHIP
 
 <div align="center">
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./profile-summary-card-output/tokyonight/0-profile-details.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="./profile-summary-card-output/default/0-profile-details.svg" />
-  <img width="100%" src="./profile-summary-card-output/tokyonight/0-profile-details.svg" alt="Efe Eren Akar's GitHub activity overview" />
-</picture>
+<img width="100%" src="./profile-summary-card-output/tokyonight/0-profile-details.svg" alt="Efe Eren Akar's animated GitHub activity overview" />
 
 <br />
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./profile-summary-card-output/tokyonight/2-most-commit-language.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="./profile-summary-card-output/default/2-most-commit-language.svg" />
-  <img width="49%" src="./profile-summary-card-output/tokyonight/2-most-commit-language.svg" alt="Most-used languages by commit" />
-</picture>
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./profile-summary-card-output/tokyonight/3-stats.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="./profile-summary-card-output/default/3-stats.svg" />
-  <img width="49%" src="./profile-summary-card-output/tokyonight/3-stats.svg" alt="GitHub statistics" />
-</picture>
+<img width="49%" src="./profile-summary-card-output/tokyonight/2-most-commit-language.svg" alt="Animated view of most-used languages by commit" />
+<img width="49%" src="./profile-summary-card-output/tokyonight/3-stats.svg" alt="Animated GitHub statistics" />
 
 </div>
 
