@@ -7,7 +7,7 @@
 </a>
 
 <p>
-  <a href="https://efeerenakar0.github.io"><img src="https://img.shields.io/badge/PORTFOLIO-0B1220?style=for-the-badge&logo=githubpages&logoColor=22D3EE" alt="Portfolio" /></a>
+  <a href="https://efeerenakar.tech"><img src="https://img.shields.io/badge/PORTFOLIO-0B1220?style=for-the-badge&logo=githubpages&logoColor=22D3EE" alt="Portfolio" /></a>
   <a href="https://github.com/efeerenakar0"><img src="https://img.shields.io/badge/GITHUB-0B1220?style=for-the-badge&logo=github&logoColor=A78BFA" alt="GitHub" /></a>
   <a href="https://instagram.com/efeerenakar"><img src="https://img.shields.io/badge/INSTAGRAM-0B1220?style=for-the-badge&logo=instagram&logoColor=F472B6" alt="Instagram" /></a>
 </p>
