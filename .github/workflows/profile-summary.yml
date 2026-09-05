@@ -26,7 +26,6 @@ jobs:
           BRANCH_NAME: main
           UTC_OFFSET: 3
           EXCLUDE: Shell
-          EXCLUDE_REPOS: shellphish-1,SocialFishMobile
           THEME: tokyonight
           ANIMATION: sequence
           DURATION: 2.8
